@@ -1,0 +1,213 @@
+:root{
+--Moderateblue:hsl(238,40%,52%);
+--SoftRed:hsl(358,79%,66%);
+--Lightgrayishblue:hsl(239,57%,85%);
+--Palered:hsl(357,100%,86%);
+--Darkblue:hsl(212,24%,26%);
+--GrayishBlue:hsl(211,10%,45%);
+--Lightgray:hsl(223,19%,93%);
+--Verylightgray:hsl(228,33%,97%);
+--White:hsl(0,0%,100%);
+}
+* {
+    font-family: 'Rubik', sans-serif;
+}
+body {
+    background-color: var(--Lightgray);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.message-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+}
+.message {
+    width: 600px;
+    height: 150px;
+    background-color: var(--White);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 20px;
+    margin-top: 15px;
+}
+.counter-side {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.counter {
+    width: 40px;
+    height: 90px;
+    background-color: var(--Lightgray);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+.upvote-counter {
+    color: var(--Moderateblue);
+    font-weight: 500;
+}
+.btn {
+    cursor: pointer;
+}
+.header {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    align-items: center;
+}
+.avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.personal-info {
+    width: 380px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    font-size: 14px;
+}
+.name {
+    color: var(--Darkblue);
+    margin-right: 10px;
+    font-weight: 500;
+}
+.lastseen {
+    color: var(--GrayishBlue) ;
+}
+.action-btn {
+    display: flex;
+    align-content: center;
+    cursor: pointer;
+    width: 50px;
+    align-items: center;
+    cursor: pointer;
+}
+.reply {
+    color: var(--Moderateblue);
+    font-weight: 500;
+    margin-left: 10px;
+    font-size: 16px;
+}
+.text {
+    color: var(--GrayishBlue);
+    width: 590px;
+    font-size: 13px;
+    line-height: 22px;
+    width: 100%;
+}
+.reply-section {
+    width: 100%;
+    height: 300px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 20px;
+}
+.left-section {
+    width: 20%;
+    height: 100%;
+    /* background-color: black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.line { 
+    height: 100%;
+    width:1px;
+    background-color: var(--Lightgrayishblue);
+}
+.right-section {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mention {
+    font-weight: 500;
+    color: var(--Moderateblue);
+    margin-right: 4px;
+}
+.right-section .message {
+    width: 504px;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+.right-section .message .personal-info {
+    width: 289px;
+}
+.right-section .message .text {
+    width: 426px;
+}
+.right-section .message  {
+    margin-top: 10px;
+}
+
+.you {
+    width: 32px;
+    height: 25px;
+    color: var(--White);
+    background-color: var(--Moderateblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    border-radius: 1px;
+}
+.contact-form {
+    width: 600px;
+    height: 150px;
+    background-color: var(--White);
+    border-radius: 10px;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: center; */
+    margin-top: 10px;
+}
+.contact-form .avatar {
+    margin:20px 20px;
+}
+.comment-section {
+    width: 400px;
+    height: 20px;
+    padding-bottom: 80px;
+    /* height: 100px; */
+    margin-top: 20px;
+    border-radius: 5px;
+}
+.btn-submit {
+    width: 100px;
+    height: 50px;
+    background-color: var(--Moderateblue);
+    color: var(--White);
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    border-radius: 5px;
+    margin-top: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.btn-submit:hover {
+    opacity: 0.5;
+}

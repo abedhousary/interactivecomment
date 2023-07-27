@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Interactive comments section</title>
+  </head>
+  <body>
+    <div class="message-container">
+      <div class="message">
+        <div class="counter-side">
+          <div class="counter">
+            <div class="btn"><img src="./images/icon-plus.svg" /></div>
+            <div class="upvote-counter">12</div>
+            <div class="btn"><img src="./images/icon-minus.svg" /></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="header">
+            <img
+              class="avatar"
+              src="./images/avatars/image-amyrobson.png"
+              alt=""
+            />
+            <div class="personal-info">
+              <div class="name">amyrobson</div>
+              <div class="lastseen">1 month ago</div>
+            </div>
+            <div class="action-btn">
+              <img src="./images/icon-reply.svg" width="11px" height="11px" />
+              <div class="reply">Reply</div>
+            </div>
+          </div>
+          <div class="text">
+            Impressive! Though it seems the drag feature could be improved. But
+            overall it looks incredible. You've nailed the design and the
+            responsiveness at various breakpoints works really well.
+          </div>
+        </div>
+      </div>
+
+      <div class="message">
+        <div class="counter-side">
+          <div class="counter">
+            <div class="btn"><img src="./images/icon-plus.svg" /></div>
+            <div class="upvote-counter">5</div>
+            <div class="btn"><img src="./images/icon-minus.svg" /></div>
+          </div>
+        </div>
+        <div class="content">
+          <div class="header">
+            <img
+              class="avatar"
+              src="./images/avatars/image-maxblagun.png"
+              alt=""
+            />
+            <div class="personal-info">
+              <div class="name">maxblagun</div>
+              <div class="lastseen">2 weeks ago</div>
+            </div>
+            <div class="action-btn">
+              <img src="./images/icon-reply.svg" width="11px" height="11px" />
+              <div class="reply">Reply</div>
+            </div>
+          </div>
+          <div class="text">
+            Woah, your project looks awesome! How long have you been coding for?
+            I'm still new, but think I want to dive into React as well soon.
+            Perhaps you can give me an insight on where I can learn React?
+            Thanks!
+          </div>
+        </div>
+      </div>
+      <div class="reply-section">
+        <div class="left-section">
+          <div class="line"></div>
+        </div>
+        <div class="right-section">
+          <div class="message">
+            <div class="counter-side">
+              <div class="counter">
+                <div class="btn"><img src="./images/icon-plus.svg" /></div>
+                <div class="upvote-counter">4</div>
+                <div class="btn"><img src="./images/icon-minus.svg" /></div>
+              </div>
+            </div>
+            <div class="content">
+              <div class="header">
+                <img
+                  class="avatar"
+                  src="./images/avatars/image-ramsesmiron.png"
+                  alt=""
+                />
+                <div class="personal-info" style="width: 300px;">
+                  <div class="name">ramsesmiron</div>
+                  <div class="lastseen">1 week ago</div>
+                </div>
+                <div class="action-btn">
+                  <img
+                    src="./images/icon-reply.svg"
+                    width="11px"
+                    height="11px"
+                  />
+                  <div class="reply">Reply</div>
+                </div>
+              </div>
+              <div class="text">
+                <span class="mention">@maxblagun</span>If you're still new, I'd
+                recommend focusing on the fundamentals of HTML, CSS, and JS
+                before considering React. It's very tempting to jump ahead but
+                lay a solid foundation first.
+              </div>
+            </div>
+          </div>
+
+          <div class="message">
+            <div class="counter-side">
+              <div class="counter">
+                <div class="btn"><img src="./images/icon-plus.svg" /></div>
+                <div class="upvote-counter">2</div>
+                <div class="btn"><img src="./images/icon-minus.svg" /></div>
+              </div>
+            </div>
+            <div class="content">
+              <div class="header">
+                <img
+                  class="avatar"
+                  src="./images/avatars/image-juliusomo.png"
+                  alt=""
+                />
+                <div class="personal-info" style="width: 245px;">
+                  <div class="name">juliusomo</div>
+                  <div class="you">you</div>
+                  <div class="lastseen">2 weeks ago</div>
+                </div>
+                <div class="action-btn">
+                  <img
+                    src="./images/icon-delete.svg"
+                    width="11px"
+                    height="11px"
+                    
+                  />
+                  <div class="reply" style="color:var(--SoftRed);margin-right: 10px;">Delete</div>
+                  <img
+                    src="./images/icon-edit.svg"
+                    width="11px"
+                    height="11px"
+                  
+                  />
+                  <div class="reply">Edit</div>
+                </div>
+              </div>
+              <div class="text">
+                <span class="mention">@ramsesmiron</span>I couldn't agree more
+                with this. Everything moves so fast and it always seems like
+                everyone knows the newest library/framework. But the
+                fundamentals are what stay constant.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <img src="./images/avatars/image-juliusomo.png" class = "avatar">
+        <input type="text" class = "comment-section">
+        <div class="btn-submit">SEND</div>
+      </div>
+    </div>
+  </body>
+</html>
